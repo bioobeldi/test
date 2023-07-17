@@ -101,18 +101,23 @@
 .container-blanc {
   width:100%;
   height: 80vh;
-  background-color: ;
+  background-color: #f2eded;
+  transition: background-color 0.5s ease;
 }
 
 .container-vert {
   width:100%;
   height: 60vh;
   background-color: #4f692a;
+  transition: background-color 0.5s ease;
+  padding: 0;
+  margin: 0;
 }
 .container-noir {
   width:100%;
   height: 40vh;
   background-color: #060704;
+  transition: background-color 0.5s ease;
 }
 
   
