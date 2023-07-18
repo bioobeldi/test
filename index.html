@@ -12,6 +12,13 @@
 
 <body>
     <header class="fixed-header">
+        <div class="lang-switcher">
+            <select id="lang-select" onchange="changeLanguage()">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+              <option value="ar">عربي</option>
+            </select>
+        </div>
         <div class="header-inner menu">
             <div class="menu-left">
                 <ul>
@@ -29,15 +36,7 @@
                     <li><a class="menu-button" href="#">ggggggggg</a></li>
                 
                 </ul>
-            </div>
-            <div class="lang-switcher">
-                <select id="lang-select" onchange="changeLanguage()">
-                  <option value="fr">Français</option>
-                  <option value="en">English</option>
-                  <option value="ar">عربي</option>
-                </select>
-            </div>
-                          
+            </div>                          
         </div>
     </header>
 
