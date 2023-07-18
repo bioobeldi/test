@@ -32,7 +32,6 @@ body {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
@@ -172,11 +171,4 @@ body {
   .header-inner.menu .menu-button {
     display: block;
   }
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
 }
