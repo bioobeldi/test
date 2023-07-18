@@ -147,25 +147,22 @@ body {
 /* Hide the header on screens narrower than 1200px and display it as a sliding sidebar */
 @media only screen and (max-width: 840px) {
   .fixed-header {
-    display: none;
+    position: relative;
+    top: 0;
+    left: -100vw; /* Adjust this value to control the sliding distance */
+    width: 100vw; /* Adjust this value to control the width of the sidebar */
+    height: 100vh;
+    background-color: #28924400;
+    z-index: 999;
   }
 
   .header-inner.menu {
     display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: -300px; /* Adjust this value to control the sliding distance */
-    width: 300px; /* Adjust this value to control the width of the sidebar */
-    height: 100vh;
-    background-color: #28924400;
-    z-index: 999;
-    box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
-    transition: left 0.3s ease;
-  }
+    }
 
-  .header-inner.menu.open {
+  .fixed-header.open {
     left: 0; /* Display the sidebar when the menu is open */
   }
 
@@ -177,7 +174,6 @@ body {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
