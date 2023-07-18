@@ -169,10 +169,6 @@ body {
     left: 0; /* Display the sidebar when the menu is open */
   }
 
-  .lang-switcher {
-    display: none; /* Hide the language switcher on the sidebar */
-  }
-
   .header-inner.menu .menu-button {
     display: block;
   }
