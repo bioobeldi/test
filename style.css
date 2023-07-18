@@ -1,136 +1,80 @@
-body {
-  display: block;
-  background-color: #f2eded;
-}
+<html>
 
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #28924400;
-  z-index: 999;
-  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
-}
+<head>
+ <meta charset="utf-8" />
+ <meta name='robots' content='index, follow'/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-}
+ <link rel="stylesheet" href="style.css" />
 
-.logo {
-  flex: 1;
-  text-align: center;
-}
+ <title>...................................................</title>  
+</head>
 
-.menu-left,
-.menu-right {
-  flex: 1;
-  text-align: center;
-}
+<body>
+    <div class="lang-switcher">
+        <select id="lang-select" onchange="changeLanguage()">
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+          <option value="ar">عربي</option>
+        </select>
+    </div>
+    <header class="fixed-header">
 
-.menu-left ul,
-.menu-right ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+        <div class="header-inner menu">
+            <div class="menu-left">
+                <ul>
+                    <li><a class="menu-button" href="#">trrrrrrrr</a></li>
+                    <li><a class="menu-button" href="#">ggggggggg</a></li>
+                 
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="accueil.html"><img src="img/fond.jpg" alt="Logo"></a>
+            </div>
+            <div class="menu-right">
+                <ul>
+                    <li><a class="menu-button" href="#">ggggggggg</a></li>
+                    <li><a class="menu-button" href="#">ggggggggg</a></li>
+                
+                </ul>
+            </div>     
 
-.menu-left ul li,
-.menu-right ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
+        </div>
 
-.menu-left ul li:last-child,
-.menu-right ul li:last-child {
-  margin-right: 0;
-}
+    </header>
+    <div class="container-vert">
 
-.logo img {
-  max-width: 80px;
-  /* Ajustez la taille maximale selon vos besoins */
-  height: auto;
-  border-radius: 50%;
-  /* Arrondir les coins */
-  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
-  transition: transform 0.2s ease-in-out;
-  text-decoration: none;
-  border :4px groove #f2ededd3;
-  margin: 10px;
-}
+    </div>
 
-.logo img:hover {
-  transform: scale(1.1);
-}
+    <div class="container-blanc">
 
-.header-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    </div>
+ 
+    <div class="container-vert">
 
-.menu-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #4f692a;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
-  transition: transform 0.2s ease-in-out;
-  text-decoration: none;
-}
-
-.menu-button:hover {
-  transform: scale(1.1);
-}
-
-.menu-button:focus {
-  outline: none;
-}
-.lang-switcher {
-  position : absolute;
-  top : 10px;
-  right: 5px;
-  margin-bottom: 10px;
-}
-
-.lang-switcher button {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-
-.container-blanc {
-  width: 100%;
-  height: 100vh;
-  background-color: #f2eded;
-  transition: background-color 0.5s ease;
-}
-
-.container-vert {
-  width: 100%;
-  height: 60vh;
-  background-color: #4f692a;
-  transition: background-color 0.5s ease;
-  padding: 0;
-  margin: 0;
-}
-
-.container-noir {
-  width: 100%;
-  height: 40vh;
-  background-color: #060704;
-  transition: background-color 0.5s ease;
-}
+    </div>
 
 
+    <div class="container-blanc">
 
+    </div>
+ 
+    <div class="container-vert">
 
+    </div>
+
+ 
+    <div class="container-vert">
+
+    </div>
+
+    <div class="    ">
+
+    </div>
+ 
+    <div class="container-noir">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
