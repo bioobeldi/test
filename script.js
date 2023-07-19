@@ -19,7 +19,7 @@ const translations = {
   fr: {
     "product-olive-oil": "huile d'olive",
     "product-argan-oil": "huile d'argan",
-    "product-amlou": "amlou)",
+    "product-amlou": "amlou",
   },
   ar: {
     "product-olive-oil": "زيت الزيتون",
