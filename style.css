@@ -26,7 +26,7 @@ a:hover {
 nav {
   z-index: 999;
   background: #4f692a;
-  position : fixed;
+  position: fixed;
   top:0;
   left:0;
   width: 100%;
@@ -40,7 +40,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  width : 70%;
+  width: 70%;
   padding-right: 10vw;
 }
 nav li a {
@@ -67,8 +67,8 @@ nav li:hover {
 }
 
 .lang-switcher {
-  position : fixed;
-  top : 10px;
+  position: fixed;
+  top: 10px;
   right: 5px;
   margin-bottom: 10px;
   z-index: 10000;
@@ -87,7 +87,7 @@ nav li:hover {
 
 /* Style pour l'image */
 #wtsp img {
-  width: 20px; /* Ajustez la taille de l'image selon vos besoins */
+  width: 20px; 
   height: 20px;
   margin-right: 5px; /* Espacement entre l'image et le texte */
 }
@@ -105,7 +105,7 @@ nav li:hover {
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
   transition: transform 0.2s ease-in-out;
   text-decoration: none;
-  border :4px groove #f2ededd3;
+  border: 4px groove #f2ededd3;
   margin: 10px;
 }
 
@@ -164,7 +164,7 @@ nav li:hover {
   }
 
   #icons:before {
-    content: "\2637";
+    content: "\2632";
     font-size: 2.5em;
     padding-right: 5 vw;
   }
