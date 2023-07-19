@@ -11,6 +11,8 @@ body {
 }
 .lang-switcher select {
   padding:2px;
+  padding-bottom: 6px;
+  padding-left: 2px;
 }
 li {
   list-style: none;
