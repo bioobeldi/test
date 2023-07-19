@@ -150,7 +150,7 @@ nav li:hover {
     padding-bottom: 30px;
   }
   nav li {
-    padding: 3px 0;
+    padding: 10px 10px;
   }
   nav li:hover {
     background: #628a2b;
