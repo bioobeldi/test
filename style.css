@@ -5,6 +5,35 @@ body {
   
 }
 
+.hamburger-menu {
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Stylisation du bouton hamburger carré */
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+}
+Avec ces ajouts, vous devriez maintenant voir le bouton hamburger carré avec trois traits au milieu à droite de votre logo sur les appareils mobiles. Le bouton hamburger sera masqué sur les écrans plus larges en utilisant la règle CSS media query.
+
+Veuillez vérifier que vous avez bien inclus le code HTML et CSS mentionné ci-dessus pour le bouton hamburger carré. Si vous rencontrez toujours des problèmes, assurez-vous également que les liens vers les fichiers CSS sont corrects et que les classes sont correctement utilisées dans votre code.
+
+
+
+
+
+
+
 
 .lang-switcher {
   position : fixed;
