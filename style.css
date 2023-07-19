@@ -31,10 +31,11 @@ body {
 
 .header-inner {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-}
+  }
 
 .logo {
   width: 20vw;
@@ -81,12 +82,6 @@ body {
 
 .logo img:hover {
   transform: scale(1.1);
-}
-
-.header-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .menu-button {
