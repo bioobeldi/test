@@ -9,7 +9,9 @@ body {
   margin:auto;
   
 }
-
+.lang-switcher select {
+  padding:2px;
+}
 li {
   list-style: none;
 }
