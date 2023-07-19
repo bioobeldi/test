@@ -274,11 +274,13 @@ nav li:hover {
 
   #icons:before {
     content: "\2632";
+    fill: #000000;
     font-size: 2.5em;
     padding-right: 5 vw;
   }
   .active #icons:before {
     content: "\2715";
+    fill: #ffffff;
     font-size: 2.5em;
     padding-right: 5 vw;
   }
