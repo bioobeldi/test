@@ -11,8 +11,24 @@
     }
   }
   
-  // Toggle the "open" class on the header-inner element to open/close the sidebar
-  document.querySelector(".menu-button").addEventListener("click", function () {
-    document.querySelector(".header-inner.menu").classList.toggle("open");
-  });
+  
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuLeft = document.querySelector('.menu-left');
+const menuRight = document.querySelector('.menu-right');
+
+hamburgerMenu.addEventListener('click', () => {
+  // Lorsqu'on clique sur le bouton hamburger
+  menuLeft.classList.toggle('menu-mobile'); // Afficher/masquer le menu gauche
+  menuRight.classList.toggle('menu-mobile'); // Afficher/masquer le menu droit
+});
+
+// masquer les menus lorsque l'utilisateur clique ailleurs sur la page.
+document.addEventListener('click', (event) => {
+  const targetElement = event.target;
+  if (!targetElement.closest('.hamburger-menu') && !targetElement.closest('.menu-mobile')) {
+    menuLeft.classList.remove('menu-mobile');
+    menuRight.classList.remove('menu-mobile');
+  }
+});
+
   
