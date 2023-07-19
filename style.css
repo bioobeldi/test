@@ -132,9 +132,11 @@ nav li:hover {
   }
   #icons:before {
     content: "\2630";
+    font-size: 1.5em;
   }
   .active #icons:before {
     content: "\2715";
+    font-size: 1.5em;
   }
   nav ul {
     position: fixed;
