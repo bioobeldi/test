@@ -14,17 +14,17 @@ const translations = {
   en: {
     "product-olive-oil": "olive oil",
     "product-argan-oil": "argan oil",
-    "product-amlou": "amlou honey, almonds and argan oil",
+    "product-amlou": "amlou",
   },
   fr: {
     "product-olive-oil": "huile d'olive",
     "product-argan-oil": "huile d'argan",
-    "product-amlou": "amlou (miel, amandes et huile d'argan)",
+    "product-amlou": "amlou)",
   },
   ar: {
     "product-olive-oil": "زيت الزيتون",
     "product-argan-oil": "زيت الأركان",
-    "product-amlou": "آملو (عسل و لوز و زيت آرڭان)",
+    "product-amlou": "آملو",
   },
 };
 
