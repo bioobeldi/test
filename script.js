@@ -10,15 +10,31 @@ links.forEach((link) => {
   })
 });
 
-function changeLanguage() {
-  var selectedLang = document.getElementById("lang-select").value;
+const translations = {
+  en: {
+    "product-olive-oil": "olive oil",
+    "product-argan-oil": "argan oil",
+    "product-amlou": "amlou honey, almonds and argan oil",
+  },
+  fr: {
+    "product-olive-oil": "huile d'olive",
+    "product-argan-oil": "huile d'argan",
+    "product-amlou": "amlou (miel, amandes et huile d'argan)",
+  },
+  ar: {
+    "product-olive-oil": "زيت الزيتون",
+    "product-argan-oil": "زيت الأركان",
+    "product-amlou": "آملو (عسل و لوز و زيت آرڭان)",
+  },
+};
 
-  // Redirect to the appropriate page with the language parameter
-  if (selectedLang === "fr") {
-    window.location.href = "page-fr.html";
-  } else if (selectedLang === "en") {
-    window.location.href = "page-en.html";
-  } else if (selectedLang === "ar") {
-    window.location.href = "page-ar.html";
+function changeLanguage() {
+  const selectedLang = document.getElementById("lang-select").value;
+
+  for (const key in translations[selectedLang]) {
+    const element = document.getElementById(key);
+    if (element) {
+      element.textContent = translations[selectedLang][key];
+    }
   }
 }
