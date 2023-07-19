@@ -10,12 +10,32 @@
 body {
   display: block;
   background-color: #f2eded;
-  margin:auto;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  max-width: 500px;
+  min-width:40vw;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: calc(1em+10vw);
+  color: #4f692a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: shine 2s infinite alternate;
 }
 
+@keyframes shine {
+  0% {
+  }
+  100% {
+      color: #d5b01c;
+  }
+}
 
 form {
   max-width: 500px;
+  min-width:40vw;
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
@@ -207,6 +227,7 @@ nav li:hover {
 }
 .container-blanc {
   width: 100%;
+  justify-content: center;
   height: 100vh;
   background-color: #f2eded;
   transition: background-color 0.5s ease;
