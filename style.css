@@ -8,17 +8,9 @@ body {
   background-color: #f2eded;
   margin:auto;
 }
-#wtsp {
-  display: inline-flex; /* Affiche les éléments en ligne (horizontalement) */
-  align-items: center; /* Aligne verticalement les éléments sur l'axe du conteneur */
-  text-decoration: none; /* Supprime le soulignement du texte (si présent) */
-}
 
-/* Style pour l'image */
-#wtsp img {
-  width: 20px; /* Ajustez la taille de l'image selon vos besoins */
-  height: 20px;
-  margin-right: 5px; /* Espacement entre l'image et le texte */
+li {
+  list-style: none;
 }
 a,
 a:visited {
@@ -87,7 +79,18 @@ nav li:hover {
   font-size: 14px;
 }
 
+#wtsp {
+  display: inline-flex; /* Affiche les éléments en ligne (horizontalement) */
+  align-items: center; /* Aligne verticalement les éléments sur l'axe du conteneur */
+  text-decoration: none; /* Supprime le soulignement du texte (si présent) */
+}
 
+/* Style pour l'image */
+#wtsp img {
+  width: 20px; /* Ajustez la taille de l'image selon vos besoins */
+  height: 20px;
+  margin-right: 5px; /* Espacement entre l'image et le texte */
+}
 .logo {
   width: 20vw;
   text-align: center;
@@ -161,7 +164,7 @@ nav li:hover {
   }
 
   #icons:before {
-    content: "\2632";
+    content: "\2637";
     font-size: 2.5em;
     padding-right: 5 vw;
   }
