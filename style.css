@@ -163,38 +163,3 @@ body {
 
 
 
-
-
-
-
-
-/* Hide the header on screens narrower than 1200px and display it as a sliding sidebar */
-@media only screen and (max-width: 840px) {
-  .fixed-header {
-    display: flex;
-    left: 95vw;
-    height: 90vh;
-    width: 100vw;
-    background-color: #28924400;
-    z-index: 999;
-  }
-
-  .header-inner.menu {
-    display: flex;
-    left: 95vw; /* Adjust this value to control the sliding distance */
-    width: 100vw; /* Adjust this value to control the width of the sidebar */
-    height: 90vh;
-    background-color: #28924400;
-    z-index: 999;
-    }
-
-  .header-inner.menu.open {
-    left: 0; /* Display the sidebar when the menu is open */
-  }
-
-
-
-  .header-inner.menu .menu-button {
-    display: block;
-  }
-}
