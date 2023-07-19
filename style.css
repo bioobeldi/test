@@ -31,11 +31,42 @@ body {
 
 .header-inner {
   display: flex;
-  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  }
+}
+
+.hamburger-menu {
+  display: none; /* Par défaut, le bouton hamburger est masqué */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-mobile {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-mobile ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-mobile ul li a {
+  color: #000;
+  text-decoration: none;
+}
 
 .logo {
   width: 20vw;
