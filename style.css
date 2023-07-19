@@ -60,8 +60,10 @@ nav li:hover {
   background: #628a2b;
 }
 #icons {
-  display: none;
   cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .lang-switcher {
@@ -123,7 +125,8 @@ nav li:hover {
 
 @media (max-width: 768px) {
   #icons {
-    display:block;
+    opacity: 1;
+    visibility: visible;
     padding-right: 5vw;
     z-index: 9999999;
   }
@@ -151,5 +154,11 @@ nav li:hover {
   }
     nav.active ul {
     left:0;
+  }
+  nav.active li a {
+
+    padding-left: 30vw;
+    padding-right:30vw;
+    box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
   }
 }
