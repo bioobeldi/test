@@ -17,15 +17,57 @@ body {
 li {
   list-style: none;
 }
+li {
+  display: inline-block;
+  background: #5d812b;
+  padding: 0 0 2px 0;
+  border-radius: 4px; /* Ajustez le rayon de bordure pour arrondir les coins */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+li:hover {
+  transform: scale(1.1);
+}
 a,
 a:visited {
-  color: #efd632;
+  color: #f1d625;
   text-decoration: none;
   text-transform: uppercase;
 }
-
+li a {
+  padding: 4px 20px 4px 20px;
+}
 a:hover {
-  color: #000000;
+  color: #0c0c0c;
+}
+
+#btn-wtsp {
+  display: inline-block;
+  background: #f2eded;
+  }
+#btn-wtsp a {
+
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#btn-wtsp:hover {
+  transform: scale(1.1);
+}
+
+#wtsp {
+  padding: 0 15px 0 15px;
+  color:#0c0c0c;
+  display: inline-flex; /* Affiche les éléments en ligne (horizontalement) */
+  align-items: center; /* Aligne verticalement les éléments sur l'axe du conteneur */
+  text-decoration: none; /* Supprime le soulignement du texte (si présent) */
+}
+
+/* Style pour l'image */
+#wtsp img {
+  width: 20px; 
+  height: 20px;
+  margin-right: 5px; /* Espacement entre l'image et le texte */
+  padding: 0 0 0 10px;
 }
 
 nav {
@@ -84,18 +126,8 @@ nav li:hover {
   font-size: 14px;
 }
 
-#wtsp {
-  display: inline-flex; /* Affiche les éléments en ligne (horizontalement) */
-  align-items: center; /* Aligne verticalement les éléments sur l'axe du conteneur */
-  text-decoration: none; /* Supprime le soulignement du texte (si présent) */
-}
 
-/* Style pour l'image */
-#wtsp img {
-  width: 20px; 
-  height: 20px;
-  margin-right: 5px; /* Espacement entre l'image et le texte */
-}
+
 .logo {
   width: 20vw;
   text-align: center;
@@ -135,21 +167,14 @@ nav li:hover {
   transition: background-color 0.5s ease;
   }
 .content {
-  width: 100%;
-  min-width: 250px;
-  margin-bottom: 20px;
-  display:inline-flexbox;
-  flex-direction:row;
-  align-items: center;
-  text-align: center;
+  position:relative;
+  width: 60vw;
+  max-width: 600px;
 }
 
 .content img {
-  height: 395px;
-  width: 100vw;
-  max-width: 495px;
-  margin: 0 auto;
-  transition: 0.6s;
+  width: 100%;
+  transition: 0.6s ease-in-out;
 }
 
 .container-noir {
