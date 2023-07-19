@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI";
+}
 body {
   display: block;
   background-color: #f2eded;
@@ -5,35 +10,59 @@ body {
   
 }
 
-.hamburger-menu {
-  cursor: pointer;
-  padding: 10px;
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  color: #efd632;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-/* Stylisation du bouton hamburger carré */
-.menu-icon {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+a:hover {
+  color: #000000;
 }
 
-.hamburger-line {
+nav {
+  background: #4f692a;
+  position : fixed;
+  top:0;
+  left:0;
   width: 100%;
-  height: 4px;
-  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(0.5rem+1.5vw);
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
 }
-Avec ces ajouts, vous devriez maintenant voir le bouton hamburger carré avec trois traits au milieu à droite de votre logo sur les appareils mobiles. Le bouton hamburger sera masqué sur les écrans plus larges en utilisant la règle CSS media query.
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width : 70%;
+  padding-right: 10vw;
+}
+nav li a {
 
-Veuillez vérifier que vous avez bien inclus le code HTML et CSS mentionné ci-dessus pour le bouton hamburger carré. Si vous rencontrez toujours des problèmes, assurez-vous également que les liens vers les fichiers CSS sont corrects et que les classes sont correctement utilisées dans votre code.
+  padding-left: 15px;
+  padding-right: 15px;
 
+}
 
+nav li {
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out;
 
-
-
-
-
+  
+}
+nav li:hover {
+  background: #628a2b;
+}
+#icons {
+  display: none;
+  cursor: pointer;
+}
 
 .lang-switcher {
   position : fixed;
@@ -48,87 +77,14 @@ Veuillez vérifier que vous avez bien inclus le code HTML et CSS mentionné ci-d
   font-size: 14px;
 }
 
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #28924400;
-  z-index: 999;
-  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.hamburger-menu {
-  display: none; /* Par défaut, le bouton hamburger est masqué */
-  cursor: pointer;
-  padding: 10px;
-}
-
-.menu-mobile {
-  display: none;
-  background-color: #fff;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-.menu-mobile ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-mobile ul li {
-  padding: 10px;
-  text-align: center;
-}
-
-.menu-mobile ul li a {
-  color: #000;
-  text-decoration: none;
-}
 
 .logo {
   width: 20vw;
-
   text-align: center;
+  z-index: 99999999;
 }
-
-.menu-left,
-.menu-right {
-  width:40vw;
-  text-align: center;
-}
-
-.menu-left ul,
-.menu-right ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-left ul li,
-.menu-right ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.menu-left ul li:last-child,
-.menu-right ul li:last-child {
-  margin-right: 0;
-}
-
 .logo img {
-  max-width: 80px;
+  max-width: 50px;
   /* Ajustez la taille maximale selon vos besoins */
   height: auto;
   border-radius: 50%;
@@ -143,31 +99,6 @@ Veuillez vérifier que vous avez bien inclus le code HTML et CSS mentionné ci-d
 .logo img:hover {
   transform: scale(1.1);
 }
-
-.menu-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #7bc415e9;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
-  transition: transform 0.2s ease-in-out;
-  text-decoration: none;
-}
-
-.menu-button:hover {
-  transform: scale(1.1);
-}
-
-.menu-button:focus {
-  outline: none;
-}
-
 .container-blanc {
   width: 100%;
   height: 100vh;
@@ -190,5 +121,35 @@ Veuillez vérifier que vous avez bien inclus le code HTML et CSS mentionné ci-d
   transition: background-color 0.5s ease;
 }
 
-
-
+@media (max-width: 768px) {
+  #icons {
+    display:block;
+    padding-right: 5vw;
+    z-index: 9999999;
+  }
+  #icons:before {
+    content: "\2630";
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+  nav ul {
+    position: fixed;
+    left: -150%;
+    top:5%;
+    flex-direction: column;
+    background: #4f692a;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+  }
+  nav li {
+    padding: 3px 0;
+  }
+  nav li:hover {
+    background: #628a2b;
+  }
+    nav.active ul {
+    left:0;
+  }
+}
