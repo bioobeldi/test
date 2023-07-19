@@ -3,6 +3,11 @@
   margin: 0;
   font-family: "Segoe UI";
 }
+*::selection {
+    background: #000101;
+    color: #fefeff;
+  
+}
 body {
   display: block;
   background-color: #f2eded;
