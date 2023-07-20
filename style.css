@@ -175,6 +175,17 @@ a:hover {
   padding: 0 0 0 10px;
 }
 
+#p-bvn {
+  width: 70%;
+  min-width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: calc(7px+4.5vw);
+  font-size: calc(1rem+1vw);
+
+}
+
+
 nav {
   z-index: 999;
   background: #4f692a;
