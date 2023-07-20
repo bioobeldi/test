@@ -1,3 +1,32 @@
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #628a2b;
+  height: 4px;
+  bottom: -10px;
+  border-radius: 50%;
+}
+
+a:hover::after {
+  animation: animLink 1.4s infinite ease-in-out;
+}
+@keyframes animLink {
+  50% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+a#wtsp::after {
+  content: none;
+}
+.logo a::after {
+content: none;
+}
+
 * {
   padding: 0;
   margin: 0;
